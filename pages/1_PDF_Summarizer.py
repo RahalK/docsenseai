@@ -6,7 +6,9 @@ import os
 
 # Load API key
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+print("Loaded key:", os.getenv("OPENAI_API_KEY"))
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key="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")
 
 st.set_page_config(page_title="PDF Summarizer", layout="wide")
 st.header("📄 PDF Summarizer")
