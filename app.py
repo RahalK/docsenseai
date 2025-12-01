@@ -13,3 +13,5 @@ Use the sidebar or the pages below to:
 
 st.info("""
 Make sure your **OpenAI API key** is stored in a `.env` file:
+OPENAI_API_KEY=your_key_here
+        """)
