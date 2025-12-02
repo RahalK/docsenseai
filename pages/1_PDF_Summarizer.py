@@ -44,7 +44,7 @@ if uploaded_pdfs:
 
         with st.expander("📝 Summary", expanded=True):
             st.markdown(
-                f"<div style='background-color:#D3D3D3; color:#000000; padding:15px; border-radius:10px; white-space:pre-wrap;'>{summary}</div>",
+                f"<div style='background-color:#FFFFFF; color:#000000; padding:15px; border-radius:10px; white-space:pre-wrap;'>{summary}</div>",
                 unsafe_allow_html=True
             )
 
