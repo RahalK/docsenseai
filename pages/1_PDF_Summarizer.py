@@ -28,7 +28,7 @@ def extract_text_from_pdf(file):
     return text
 
 def summarize_text(text):
-    prompt = f"Summarize the following document(s) into bullet points:\n{text[:120000]}"
+    prompt = f"Create a beautifully formatted, elegant presentation that provides a detailed bullet-point summary of the following document(s):\n{text[:120000]}"
     response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
