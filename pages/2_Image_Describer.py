@@ -35,7 +35,7 @@ if uploaded_images:
         col1, col2 = st.columns([1,2])
         img = Image.open(img_file)
         with col1: 
-            st.image(img, caption=img_file.name, use_column_width=True)
+            st.image(img, caption=img_file.name, use_container_width=True)
         with col2:
             with st.spinner(f"Describing {img_file.name}..."):
                 description = describe_image(img_file)
