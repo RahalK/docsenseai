@@ -1,4 +1,4 @@
-# DocsenseAI
+# DocSenseAI
 
 ## OCR Dependency
 
