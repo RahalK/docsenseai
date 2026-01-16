@@ -29,7 +29,7 @@ pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 #pytesseract.pytesseract.tesseract_cmd = os.path.join(os.getcwd(), "tesseract", "tesseract.exe")
 
 st.title("🔎 OCR Text Extractor")
-st.write("Upload scanned PDFs or images, extract the text, and download all as separate PDFs in one ZIP.")
+st.write("Upload scanned documents, extract the text, and download all as separate PDFs in one ZIP.")
 
 uploaded_files = st.file_uploader(
     "Upload files",
@@ -66,7 +66,7 @@ def create_pdf(text):
 
 # --- Extract text and save in session state ---
 if uploaded_files:
-    if st.button("📝 Extract Text & Download PDFs"):
+    if st.button("📝 Extract Text"):
         with st.spinner("Processing... This may take a few seconds."):
 
             # Process each uploaded file and store extracted text in session state
